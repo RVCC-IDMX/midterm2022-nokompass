@@ -2,7 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image: url('https://source.unsplash.com/random/1600x900/?landscape');
     background-size: cover;
+    margin: 0px;
 }
+
+/* Navbar */
 
 nav {
     background-color: rgba(0, 0, 0, 0.5);
@@ -12,23 +15,22 @@ nav {
     justify-content:space-between;
     align-items: center;
     padding: 0em 15em 0em 10em;
-    margin: 1em 1em 0em 1em;
-    border-radius: 20px;
+    margin: 0px;
 }
 
-h1 {
+nav h1 {
     color: white;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+nav li {
     display: inline;
 }
 
-a {
+nav a {
     background-color: rgba(0, 0, 0, 0.30);
     padding: 1em 2em 1em 2em;
     margin: 2em;
@@ -37,6 +39,31 @@ a {
     text-decoration: none;
     transition: linear 0.25s;
 }
-a:hover {
+
+nav a:hover {
     background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* Header */
+
+#hero {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0em 16px 0em 16px;
+    height: 20em;
+}
+
+#hero section{
+    margin-left: 2em;
+    text-align: left;
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
 }
