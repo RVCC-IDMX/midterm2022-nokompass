@@ -12,7 +12,7 @@ body {
 /* Navbar */
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     height: 7em;
     max-height: 100%;
@@ -35,7 +35,7 @@ nav li {
 }
 
 nav a {
-    background-color: rgba(0, 0, 0, 0.30);
+    background-color: rgba(14, 14, 14, 0.5);
     padding: 1em 2em 1em 2em;
     margin: 2em;
     border-radius: 10px;
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(34, 34, 34, 0.5);
 }
 
 /* Header */
@@ -100,6 +100,9 @@ header {
 
 /* Main */
 
+main {
+    background-color: black;
+}
 
 /* Portfolio Grid */
 
@@ -154,6 +157,14 @@ header {
     cursor: pointer;
 }
 
-#portfolio-w-nav {
-    background-color: black;
+#portfolio-bg {
+    background-color: rgba(0, 0, 0, 0.85);
+    transform-style: preserve-3d;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+#portfolio-container {
+    background-image: url("../img/portfoliobg.png");
+    
 }
