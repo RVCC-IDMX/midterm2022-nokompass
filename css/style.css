@@ -12,7 +12,11 @@ body {
 /* Navbar */
 
 nav {
-    background-color: rgba(71, 39, 26, 0.75);
+    position: fixed;
+    width: 77vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(85, 40, 22, 0.75);
     display: flex;
     height: 7em;
     max-height: 100%;
@@ -62,7 +66,7 @@ nav a:hover {
 
 #hero img,
 #header-hero-text {
-    margin-top: -10vh;
+    margin-top: 0vh;
 }
 
 #header-hero-text {
@@ -112,7 +116,11 @@ main {
 }
 
 #portfolio-grid h1 {
-    font-size: 75px;
+    font-size: 65px;
+}
+
+#portfolio-grid p {
+    font-size: 20px;
 }
 
 .grid-item {
@@ -155,9 +163,6 @@ main {
 
 #portfolio-bg {
     background-color: rgba(0, 0, 0, 0.85);
-    transform-style: preserve-3d;
-    overflow-y: auto;
-    perspective: 2px;
 }
 
 #portfolio-container {
@@ -168,6 +173,7 @@ main {
 /* About Me */
 
 #aboutme {
+    height: 60vh;
     background-image: url("../img/roundvalley.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,14 +181,78 @@ main {
 }
 
 #aboutme h1 {
-    font-size: 50px;
+    font-size: 65px;
+    margin: 0;
+    margin-bottom: 1em;
 }
 
 #aboutme-bg {
-    background-color: rgba(0, 0, 0, 0.50);
-    padding: 2em;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+/* Testimonials */
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#testimonials h1 {
+    font-size: 65px;
+}
+
+#testimonialcontainer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+#firsttwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 40em;
+    border: 2px solid rgba(231, 86, 28, 0.5);
+    background-color: rgba(85, 40, 22, 0.75);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0px 0px 0px;
+}
+
+.container:nth-child(2){
+    margin-left: 1em;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container span {
     font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Footer */
+
+footer {
+    height: 20vh;
 }
