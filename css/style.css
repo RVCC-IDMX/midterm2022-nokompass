@@ -12,7 +12,7 @@ body {
 /* Navbar */
 
 nav {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(71, 39, 26, 0.75);
     display: flex;
     height: 7em;
     max-height: 100%;
@@ -35,7 +35,7 @@ nav li {
 }
 
 nav a {
-    background-color: rgba(14, 14, 14, 0.5);
+    background-color: rgba(231, 86, 28, 0.5);
     padding: 1em 2em 1em 2em;
     margin: 2em;
     border-radius: 10px;
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(34, 34, 34, 0.5);
+    background-color: rgb(231, 86, 28);
 }
 
 /* Header */
@@ -88,10 +88,6 @@ nav a:hover {
 }
 
 /* Background Image */
-
-#background-img {
-    object-fit: cover;
-}
 
 header {
     height: 100vh;
@@ -145,7 +141,7 @@ main {
     border-radius: 10px;
     border: none;
     padding: 1em 2em 1em 2em;
-    background-color: rgba(100, 0, 0, 0.30);
+    background-color: rgba(231, 86, 28, 0.5);
     text-decoration: none;
     color: white;
     text-align: center;
@@ -153,7 +149,7 @@ main {
 }
 
 #portfolio-samples a:hover {
-    background-color: rgba(100, 0, 0, 0.50);
+    background-color: rgb(231, 86, 28);
     cursor: pointer;
 }
 
@@ -166,5 +162,27 @@ main {
 
 #portfolio-container {
     background-image: url("../img/portfoliobg.png");
-    
+
+}
+
+/* About Me */
+
+#aboutme {
+    background-image: url("../img/roundvalley.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#aboutme h1 {
+    font-size: 50px;
+}
+
+#aboutme-bg {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
 }
