@@ -199,6 +199,11 @@ main {
 /* Testimonials */
 
 #testimonials {
+    background-image: url("../img/pathwithgate.jpg");
+}
+
+#testimonials-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,6 +212,7 @@ main {
 
 #testimonials h1 {
     font-size: 65px;
+    margin-bottom: 0.5em;
 }
 
 #testimonialcontainer {
@@ -254,5 +260,35 @@ main {
 /* Footer */
 
 footer {
-    height: 20vh;
+    background-color: rgba(85, 40, 22, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .footercontainer {
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(231, 86, 28, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footercontainer a {
+    color: white;
+}
+
+footer #first a {
+    color: white;
+    margin: 10px;
+}
+
+footer .footercontainerright {
+    height: 188px;
+}
+
+footer .footercontainerright .footercontainer {
+    height: 29%;
 }
